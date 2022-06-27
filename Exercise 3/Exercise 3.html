@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex.3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>Exercise 3</h1>
+<h1>a)</h1>
+    <p> the following chemical reaction is an acid-base reaction (also known as a neutralization reaction).
+    In this particular case, a strong acid, sulphuric acid, reacts with a strong base, sodim hydroxide (aka caustic soda or lye), 
+    to produce salt and water:</p>
+<!-- Apply subscript to the number to show the chemical equation below in the proper format.-->
+    <h1 id="121212">NaOH + H<small>2</small>SO<small>4</small> &#8594; Na<small>2</small>SO<small>4</small> + H<small>2</small>O</h1>
+
+<hr>
+<h1>b)</h1>
+<!-- Embed the EXAM 4TPIFI HTSTA 26Jun2022.pdf file here in a frame with 500 pixels height and a width as large as the viewport.-->
+        <embed src="../EXAM 4TPIFI HTSTA 26Jun2022.pdf" width="100%" height="500" type="application/pdf">
+<hr>
+<h1>c)</h1>
+<p> an example of ccs code:</p>
+<!-- 
+    After after removing the comment tags, show the following css code as it is, 
+    without affecting the format of the page 
+    <style>
+        body {
+            background: red;
+        }
+        h1 {
+            color: blue;
+            background: yellow;
+        }
+    </style>
+-->
+<pre>
+    <code>
+        style
+            body {
+                background: red;
+            }
+            h1 {
+                color: blue;
+                background: yellow;
+            }
+        style
+    </code>
+</pre>
+<hr>
+<h1>d)</h1>
+<p> classes:</p>
+<!-- Group all the content given here in two distinct classes, namely “Luxembourg” and “Antarctica” based on the sentence’s meaning. -->
+<div class="Luxembourg">
+    <!-- Content members of the “Luxembourg” class: -->
+    <h1>Luxembourg</h1>
+    <p>Luxembourg is a very diverse and multicultural country right in the heart of Europe.</p>
+    <p>On average, every person living in Luxembourg speak at least four languages.</p>
+    <p>Emile Metz is one of the best high schools from Luxembourg.</p>
+</div>
+<div class="Antarctica">
+    <!-- Content members of the “Antarctica” class: -->
+    <h1>Antarctica</h1>
+    <p>Antarctica is a very cold continent located at the south pole of our planet.</p>
+    <p>There are many species of pinguins living in Antarctica.</p>
+    <p>Except for scientific expeditions, nobody lives in Antarctica.</p>
+</div>
+
+<hr>
+<h1>e)</h1>
+<p> responsive image:</p>
+<!-- Use the HTML element that enable the display of different images for different viewports.
+Set the breakeven point at 400px width -->
+<p>
+<!--<img src="bigflowers.jpg" alt="bigflowers" style="max-width:400px">
+    <img src="smallflower.jpg" alt="smallflower">
+-->
+<picture>
+
+    <source srcset="smallflower.jpg" media="(max-width: 600px)">
+
+    <source srcset="bigflowers.jpg" media="(max-width: 1000px)">
+
+    <img src="bigflowers.jpg" alt="Flowers" style="width:auto;">
+
+</picture>
+</p>
+
+<hr>
+<h1>f)</h1>
+<p> id:</p>
+
+<!-- Give an id to the chemical reaction shown at point a) 
+     and edit the next paragraph so that by clicking it, one will be redirected to the chemical reaction --><a>
+<a href="#121212"><p>Click here to go up to the neutralisation reaction</p></a>
+
+
+<hr>
+<h1>g)</h1>
+<p> internal css:</p>
+<style>
+.Luxembourg{
+    background-color: lightyellow;
+	color:  darkred;
+    }
+.Antarctica{
+    background-color: lightblue;
+	color: darkblue;
+    }
+.Luxembourg, .Antarctica{
+    border: 2px solid black;
+}
+</style>
+
+<!-- write an internal css that formats the two classes “Luxembourg” and “Antarctica” as following:
+for Luxembourg class:
+	background color: light-yellow
+	text color: dark red
+for Antarctica class:
+	background color: light blue
+	text color: dark blue
+for both classes:
+	a continuous black line border with a thickness of 2 pixels
+ -->
+
+<!-- end of Exercise 3 -->
+</body>
+</html>
